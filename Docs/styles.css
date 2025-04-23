@@ -1,6 +1,6 @@
 body {background-color: black; color: lightgrey; }
-h1 { color: green; }
-p { color: blueviolet; }
+h1 { color: red; }
+p { color: yellow; }
 #datetime-container {
     position: absolute; 
     top: 10px;        
