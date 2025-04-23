@@ -7,11 +7,13 @@ float y = float.Parse(Console.ReadLine() ?? "0.0f");
 Console.Write("op : ");
 char op = (Console.ReadLine() ?? " ")[0];
 
-float result = op switch
+var calc = new Calculator();
+try
 {
-    '+' => x + y,
-    '-' => x - y,
-    '*' => x * y,
-    _ => throw new Exception("Invalid op")
-};
-Console.WriteLine($"{x} {op} {y} = {result}");
+    float result = calc.Calculate(x, y, op);
+    Console.WriteLine($"{x} {op} {y} = {result}");
+}
+catch (ArgumentException e)
+{
+    Console.WriteLine($"Ошибка: {e.Message}");
+}
