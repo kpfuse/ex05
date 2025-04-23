@@ -1,4 +1,4 @@
-body {color: black; }
+body {background-color: black; color: lightgrey; }
 h1 { color: green; }
 p { color: blueviolet; }
 #datetime-container {
