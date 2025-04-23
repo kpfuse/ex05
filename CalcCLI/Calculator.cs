@@ -7,6 +7,7 @@ public class Calculator
             '+' => Add(x, y),
             '-' => Subtract(x, y),
             '*' => Multiply(x, y),
+            '/' => Divide(x, y),
             _ => throw new ArgumentException("Invalid operator", nameof(op))
         };
     }
@@ -16,4 +17,5 @@ public class Calculator
     public float Subtract(float a, float b) => a - b;
 
     public float Multiply(float a, float b) => a * b;
+    public float Divide(float a, float b) => a / b;
 }
